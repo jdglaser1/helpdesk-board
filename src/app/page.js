@@ -2,6 +2,8 @@
 'use client'
 
 import Board from "./Components/Board"
+import TicketList from "./Components/TicketList"
+import TicketCard from "./Components/TicketCard"
 
 
 export default function Home(){
@@ -11,6 +13,7 @@ export default function Home(){
     <div>
       <h1 className='site-header'>Help-Desk Board</h1>
       <Board/>
+      <TicketCard/>
     </div>
   )
 }

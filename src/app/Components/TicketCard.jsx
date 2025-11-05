@@ -1,10 +1,25 @@
-'use client'
+//src/app/components/TicketCard.jsx
+'use client';
 
-export default function TicketCard({ticket, addToQueue, inQueue}){
-    return(
-        <div>
-            <h1>Ticket Card</h1>
-            <button>Add to My Queue</button>
-        </div>
-    )
+// Displays a single product and an Add button.
+// Disables the button and shows "Out of stock" when stock === 0.
+export default function TicketCard({ id, title, description, priority, status, assignee, updatedAt }) {
+
+  return (
+    <div>
+      <div>
+        <div>{priority}</div>
+        <h3>{title}</h3>
+        <div>{id}</div>
+        <div>{'Queue'}</div>
+      </div>
+
+      <button
+
+        onClick={() => onAdd(id)}
+      >
+        Add to Queue
+      </button>
+    </div>
+  );
 }

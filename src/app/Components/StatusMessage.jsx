@@ -1,3 +1,4 @@
+//src/app/components/StatusMessage.jsx
 'use client';
 
 // Priority: loading > error > empty

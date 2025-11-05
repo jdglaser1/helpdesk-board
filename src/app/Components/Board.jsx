@@ -1,9 +1,10 @@
-'use client';
+//src/app/components/Board.jsx
+'use client'
 
 
-import { useEffect, useMemo, useState } from 'react';
-import TicketCard from './TicketCard';
-import TicketList from './TicketList';
+import { useEffect, useMemo, useState } from 'react'
+import TicketCard from './TicketCard'
+import TicketList from './TicketList'
 import StatusMessage from "./StatusMessage";
 
 
