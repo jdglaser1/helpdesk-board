@@ -1,3 +1,0 @@
-//page.jsx
-'use client'
-

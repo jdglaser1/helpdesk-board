@@ -1,5 +1,4 @@
 //src/app/api/tickets.route.js
-'use client'
 
 export async function GET() {
   const tickets = [
@@ -20,4 +19,5 @@ export async function GET() {
     { id: 't-1015', title: 'Keyboard not responding on desktop', description: 'USB keyboard not detected by workstation in HR office.', priority: 'Medium', status: 'In Progress', assignee: 'Ryan Carter', updatedAt: '2025-10-30T10:14:00Z' },
     { id: 't-1016', title: 'Phishing email investigation', description: 'Suspicious email claiming to be from IT support reported by user.', priority: 'High', status: 'Resolved', assignee: 'Michael Chen', updatedAt: '2025-11-02T08:22:00Z' }
   ];
+  return Response.json(tickets);
 }
