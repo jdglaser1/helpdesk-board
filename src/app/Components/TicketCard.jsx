@@ -14,7 +14,7 @@ export default function TicketCard({ id, title, description, priority, status, a
         <div>{'Queue'}</div>
       </div>
 
-      <button
+      <button className='button'
 
         onClick={() => onAdd(id)}
       >

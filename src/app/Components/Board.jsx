@@ -24,9 +24,11 @@ export default function Board() {
          <h2 className = 'subtitle'>Current Tickets</h2>
            {tickets.map(t => (
                <li className= 'product-card' key={t.id}>Title: {t.title} <br/> Description: {t.description}<br/> Priority: {t.priority}
-               <br/> Status: {t.status}<br/>Assignee: {t.assignee}<br/>Updated: {t.updatedAt}</li>
+               <br/> Status: {t.status}<br/>Assignee: {t.assignee}<br/>Updated: {t.updatedAt} <button className='button'>Add to Queue</button></li>
            ))}
+            
        </ul>
+
    );
   
 
