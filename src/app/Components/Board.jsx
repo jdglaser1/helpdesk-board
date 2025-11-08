@@ -10,6 +10,7 @@ import StatusMessage from "./StatusMessage";
 
 export default function Board() {
    const [tickets, setTickets] = useState([])
+   const [filters, setFilters] = useState({status:''})
 
 
    useEffect(() => {
