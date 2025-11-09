@@ -3,17 +3,12 @@
 
 export default function MyQueueSummary({queue, remove, clear}){
 
-
-    const queueId = Object.keys(queue)
-
-    if (queueId.length === 0){
-        
-        return(
-            <h1> Queue Empty</h1>
-        )
-    }
     return(
-        <h1> The current queue: ({queueId.length})</h1>
+        <div>
+            <br></br>
+            <h1> The current queue: ({queue})</h1>
+            <br></br>
+        </div>
     )
 
 }

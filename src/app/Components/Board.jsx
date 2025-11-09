@@ -9,6 +9,7 @@ import StatusMessage from "./StatusMessage";
 import SearchBox from './SearchBox';
 import PriorityFilter from './PriorityFilter';
 import StatusFilter from './StatusFilter';
+import MyQueueSummary from './MyQueueSummary';
 
 
 export default function Board() {
@@ -33,7 +34,8 @@ export default function Board() {
                <li className= 'product-card' key={t.id}>Title: {t.title} <br/> Description: {t.description}<br/> Priority: {t.priority}
                <br/> Status: {t.status}<br/>Assignee: {t.assignee}<br/>Updated: {t.updatedAt} <button className='button'>Add to Queue</button></li>
            ))}
-           
+        <MyQueueSummary/>
+        <StatusMessage/>
        </ul>
 
    );
