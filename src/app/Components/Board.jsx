@@ -6,6 +6,9 @@ import { useEffect, useMemo, useState } from 'react'
 import TicketCard from './TicketCard'
 import TicketList from './TicketList'
 import StatusMessage from "./StatusMessage";
+import SearchBox from './SearchBox';
+import PriorityFilter from './PriorityFilter';
+import StatusFilter from './StatusFilter';
 
 
 export default function Board() {
@@ -22,12 +25,15 @@ export default function Board() {
   
    return (
        <ul>
+        <SearchBox/>
+        <PriorityFilter/>
+        <StatusFilter/>
          <h2 className = 'subtitle'>Current Tickets</h2>
            {tickets.map(t => (
                <li className= 'product-card' key={t.id}>Title: {t.title} <br/> Description: {t.description}<br/> Priority: {t.priority}
                <br/> Status: {t.status}<br/>Assignee: {t.assignee}<br/>Updated: {t.updatedAt} <button className='button'>Add to Queue</button></li>
            ))}
-            
+           
        </ul>
 
    );
