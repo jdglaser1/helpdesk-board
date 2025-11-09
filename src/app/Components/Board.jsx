@@ -29,6 +29,7 @@ export default function Board() {
         <SearchBox/>
         <PriorityFilter/>
         <StatusFilter/>
+        <TicketList/>
          <h2 className = 'subtitle'>Current Tickets</h2>
            {tickets.map(t => (
                <li className= 'product-card' key={t.id}>Title: {t.title} <br/> Description: {t.description}<br/> Priority: {t.priority}
